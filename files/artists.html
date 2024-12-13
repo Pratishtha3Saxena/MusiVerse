@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Artists</title>
+    <link href="index.css" rel="stylesheet">
+    <style>
+        .flex-container-1 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .flex-container {
+            color: black;
+            width: 25vmax;
+            margin: 60px;
+            text-align: center;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .flex-container img {
+            transition: all 0.3s ease;
+            border-radius: 50%;
+            width: 500px;
+            height: 500px;
+            object-fit: cover;
+            object-position: center center;
+        }
+
+        .flex-container:hover img {
+            transform: scale(1.1)
+        }
+
+        .artist {
+            position: relative;
+        }
+
+        .name {
+            position: absolute;
+            top: 105%;
+            left: 50%;
+            font-weight: bold;
+            transform: translate(-50%, -50%);
+            font-size: 28px;
+            color: white;
+            text-shadow: 2px 2px 4px black;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body
+    style="background-image: url('logobackground.jpg'); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
+
+    <nav class="navbar">
+        <img src="ICON.png" alt="logo">
+         <a href="index.html">Home</a>
+    <a href="artists.html">Artists</a>
+    <a href="search.html">Search</a>
+    <a href="spotlight.html">Spotlight</a>
+    <a href="playlist.html">Playlist</a>
+    <a href="about.html">About</a>
+        <p> Artists </p>
+    </nav>
+
+    <script>
+        const defaultColor = '#eeeeee';
+
+        const navLinks = document.querySelectorAll('.navbar a');
+
+        navLinks.forEach(link => {
+            link.addEventListener('mouseover', () => {
+                link.style.color = '#301934';
+            });
+
+            link.addEventListener('mouseout', () => {
+                link.style.color = defaultColor;
+            });
+        });
+    </script>
+    
+    
+    <h1 style="color:antiquewhite; margin-top: 60px; font-size: 50px; text-align: center;"> ARTISTS </h1>
+    <div class="flex-container-1">
+
+        <div class="flex-container">
+            <a href="coldplay.html">
+                <div class="artist"> <img src="coldplay.png">
+                    <div class="name"> COLDPLAY </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="flex-container">
+            <a href="linkinpark.html">
+            <div class="artist"> <img src="linkinpark.png">
+                <div class="name"> LINKIN PARK </div>
+            </div>
+            </a>
+        </div>
+
+        <div class="flex-container">
+            <a href="twentyonepilots.html">
+            <div class="artist"> <img src="twentypilot.png">
+                <div class="name"> TWENTY ONE PILOTS </div>
+            </div>
+            </a>
+        </div>
+
+        <div class="flex-container">
+            <a href="paramore.html">
+            <div class="artist"> <img src="paramore.jpg">
+                <div class="name"> PARAMORE </div>
+            </div>
+            </a>
+        </div>
+
+        <div class="flex-container">
+            <a href="sabrinacarpenter.html">
+            <div class="artist"> <img src="sabrinacarpenter.png">
+                <div class="name"> SABRINA CARPENTER </div>
+            </div>
+            </a>
+        </div>
+
+    </div>
+
+    <footer>
+        <br>
+        <p>Our site is designed to help you navigate the wonderful world of music. Find out more <u> <b> <a
+                        href="about.html">about us.</a> </u> </b> </p>
+        <p>2023- Musiverse</p>
+        <br>
+    </footer>
+
+</body>
+
+</html>

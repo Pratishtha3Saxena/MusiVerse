@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Home</title>
+    <link href="index.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-image: url("logobackground.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+
+        h1,
+        h2 {
+            text-align: center;
+            color: white;
+        }
+
+        h1 {
+            margin-top: 60px;
+            font-size: 50px;
+            text-shadow: 6px 6px 8px black;
+        }
+
+        h2 {
+            margin-top: 50px;
+            font-size: 30px;
+            text-shadow: 4px 4px 6px black;
+        }
+
+        .navbar a:hover {
+            /*             color: #00324e; */
+            background-color: grey;
+        }
+
+        .glow {
+            /* font-size: 80px; */
+            color: #fff;
+            text-align: center;
+            animation: glow 1s ease-in-out infinite alternate;
+        }
+
+        @-webkit-keyframes glow {
+            from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #020b30, 0 0 40px #400264, 0 0 50px #8c0091, 0 0 60px #000274, 0 0 70px #0e067c;
+            }
+
+            to {
+                text-shadow: 0 0 20px #fff, 0 0 30px #bbb95e, 0 0 40px #bbb95e, 0 0 50px #bbb95e, 0 0 60px #bbb95e, 0 0 70px #bbb95e, 0 0 80px #bbb95e;
+            }
+        }
+
+
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        footer {
+            margin-top: auto;
+        }
+
+
+        /* Style for the table */
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 80%;
+            max-width: 1000px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: #bbb95e71;
+            font-family: monospace;
+            font-size: 2ch;
+        }
+
+        .delete-btn {
+            background-color: #7b1fb1;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-left:0;
+        }
+
+        .delete-btn:hover {
+            background-color: rgb(56, 0, 56);
+        }
+
+        th{
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <img src="ICON.png" alt="logo">
+        <a href="index.html">Home</a>
+        <a href="artists.html">Artists</a>
+        <a href="search.html">Search</a>
+        <a href="spotlight.html">Spotlight</a>
+        <a href="playlist.html"> Playlist</a>
+        <a href="about.html">About</a>
+        <p> playlist </p>
+    </nav>
+
+
+    <main>
+        <h1 class="glow"> PLAYLIST </h1>
+        <table class="table" style="margin-left:auto; margin-right:auto">
+            <thead>
+                <tr>
+                    <th>Song Name</th>
+                    <th>Artist</th>
+                    <th>Duration</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </main>
+    
+
+    <footer>
+        <br>
+        <p>Our site is designed to help you navigate the wonderful world of music. Find out more <u> <b> <a
+                        href="about.html">about us.</a> </u> </b> </p>
+        <p>2023- Musiverse</p>
+        <br>
+    </footer>
+
+    <script src="playlist.js">
+        // // get all delete buttons
+        // const deleteButtons = document.querySelectorAll('.delete-btn');
+        
+        // // add click event listener to each delete button
+        // deleteButtons.forEach(button => {
+        //     button.addEventListener('click', (event) => {
+        //         // get the row to be deleted
+        //         const row = event.target.parentNode.parentNode;
+        //         // remove the row
+        //         row.remove();
+        //     });
+        // });
+
+    </script>
+    
+
+</body>
+
+</html>

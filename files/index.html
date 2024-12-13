@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Home</title>
+    <link href="index.css" rel="stylesheet">
+
+    <style>
+        body{
+            background-image: url("logobackground.jpg");
+            background-repeat:no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            border-radius: 20%;
+            width: 400px;
+            color: black;
+            margin: 30px;
+            position: relative;
+        }
+
+        .image-container:hover img {
+            transform: scale(1.1)
+        }
+
+        .image-container img {
+            transition: all 0.3s ease;
+            border-radius: 20%;
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+            object-position: center center;
+    
+        }
+
+        .name {
+            position: absolute;
+            margin-top: 25px;
+            top: 105%;
+            left: 50%;
+            font-weight: bold;
+            transform: translate(-50%, -50%);
+            font-size: 20px;
+            color: white;
+            text-align: center;
+            margin-bottom: 25px;
+            text-shadow: 3px 3px 5px black;
+        }
+
+        h1, h2{
+            text-align: center;
+            color: white;
+        }
+
+        h1{
+            margin-top: 60px;
+            font-size: 50px;
+            text-shadow: 6px 6px 8px black;
+        }
+
+        h2{
+            margin-top: 50px;
+            font-size: 30px;
+            text-shadow: 4px 4px 6px black;
+        }
+
+        .navbar a:hover {
+/*             color: #00324e; */
+            background-color: grey;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <img src="ICON.png" alt="logo">
+           <a href="index.html">Home</a>
+    <a href="artists.html">Artists</a>
+    <a href="search.html">Search</a>
+    <a href="spotlight.html">Spotlight</a>
+    <a href="playlist.html">Playlist</a>
+    <a href="about.html">About</a>
+        <p> Home </p>
+    </nav>
+
+    <script>
+        const defaultColor = '#eeeeee';
+
+        const navLinks = document.querySelectorAll('.navbar a');
+
+        navLinks.forEach(link => {
+            link.addEventListener('mouseover', () => {
+                link.style.color = '#00324e';
+            });
+
+            link.addEventListener('mouseout', () => {
+                link.style.color = defaultColor;
+            });
+        });
+    </script>
+
+    <h1> MUSIVERSE TOP CHARTS </h1>
+
+    <h2>TOP ARTISTS</h2>
+    <div class="flex-container">
+
+        <div class="image-container">
+            <a href="twentyonepilots.html">
+            <img src="https://i.pinimg.com/564x/af/b4/df/afb4dfe27cacaa7c416fdb2ff05abd5c.jpg" alt="Twenty One Pilots">
+            <div class="name">Twenty One Pilots</div>
+            </a>
+        </div>
+
+        <div class="image-container">
+            <a href="sabrinacarpenter.html">
+            <img src="https://i.pinimg.com/736x/d3/e3/53/d3e3534c4c2ea31d2b5c23a6e22fa3de.jpg" alt="Sabrina Carpenter">
+            <div class="name">Sabrina Carpenter</div>
+            </a>
+        </div>
+
+        <div class="image-container">
+            <a href="coldplay.html">
+            <img src="https://i.pinimg.com/564x/d1/26/de/d126de280ab37f4996b49a8ce0d45ea6.jpg" alt="Coldplay">
+            <div class="name">Coldplay</div>
+            </a>
+        </div>
+    </div>
+
+    <br>
+
+    <h2>TOP ALBUMS</h2>
+    <div class="flex-container">
+
+        <div class="image-container">
+            <a href="blurry_face.html">
+            <img src="https://upload.wikimedia.org/wikipedia/en/7/7d/Blurryface_by_Twenty_One_Pilots.png" alt="BlurryFace">
+            <div class="name">Blurry Face</div>
+            </a>
+        </div>
+
+        <div class="image-container">
+            <a href="paramore1.html">
+            <img src="https://upload.wikimedia.org/wikipedia/en/e/eb/ParamoreParamore.png" alt="Paramore">
+            <div class="name">Paramore</div>
+            </a>
+        </div>
+        
+        <div class="image-container">
+            <a href="parachute.html">
+            <img src="https://i.pinimg.com/564x/69/97/6f/69976f8830dc25c794aa6f39cc616b64.jpg" alt="Parachutes">
+            <div class="name">Parachutes</div>
+            </a>
+        </div>
+
+    </div>
+
+    <br>
+
+    <h2>TOP SONGS</h2>
+    <div class="flex-container">
+
+        <div class="image-container">
+            <img src="hymn4grey.png" alt="Hymn For the weekend">
+        </div>
+
+        <div class="image-container">
+            <img src="numbgrey.png" alt="Numb">
+        </div>
+
+        <div class="image-container">
+            <img src="diamondsgrey.png" alt="Diamonds are Forever">
+        </div>
+    </div>
+
+    <footer>
+        <br>
+        <p>Our site is designed to help you navigate the wonderful world of music. Find out more <u> <b> <a href="about.html">about us.</a> </u> </b> </p>
+        <p>2023- Musiverse</p>
+        <br>
+    </footer>
+
+</body>
+
+</html>

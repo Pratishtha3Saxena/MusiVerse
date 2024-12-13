@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Sabrina Carpenter Albums</title>
+    <link href="index.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(#714f45, #cfab9e, #e66465, #9198e5);
+        }
+
+        .hero-image {
+            background: url("https://failurebeforesuccess.com/wp-content/uploads/2022/06/image.jpg");
+            background-repeat: no-repeat;
+            background-position: 50% 20%;
+            background-size: cover;
+            height: 600px;
+            width: 100%;
+            top: 0%;
+            position: relative;
+            z-index: 1
+        }
+
+        .hero-text {
+            text-align: center;
+            position: absolute;
+            top: 15%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
+
+
+        div.flexbox {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        div.bleh {
+            width: 450px;
+            background-color: white;
+            box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 30px 30px 0 rgba(0, 0, 0, 0.19);
+            margin-bottom: 40px;
+            margin-top: 30px;
+            margin-left: 10px;
+        }
+
+        div.bleh img {
+            transition: all 0.3s ease;
+        }
+
+        div.bleh:hover {
+            transform: scale(1.1);
+        }
+
+        div.meh {
+            text-align: center;
+            padding: 10px 20px;
+        }
+
+        .navbar a:hover {
+            background-color: grey;
+        }
+
+        h1{
+            text-shadow: 2px 2px 4px goldenrod;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <img src="ICON.png" alt="logo">
+        <a href="index.html">Home</a>
+        <a href="artists.html">Artists</a>
+        <a href="about.html">About</a>
+        <a href="search.html">Search</a>
+        <a href="spotlight.html">Spotlight</a>
+        <p> Artists > Sabrina Carpenter </p>
+    </nav>  
+    
+    
+    <script>
+        const defaultColor = '#eeeeee';
+
+        const navLinks = document.querySelectorAll('.navbar a');
+
+        navLinks.forEach(link => {
+            link.addEventListener('mouseover', () => {
+                link.style.color = 'pink';
+            });
+
+            link.addEventListener('mouseout', () => {
+                link.style.color = defaultColor;
+            });
+        });
+    </script>
+
+
+    <div class="hero-image" style="margin-top: 60px;">
+        <div class="hero-text">
+            <h1 style="font-size:80px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                <i><b>SABRINA CARPENTER</b></i>
+            </h1>
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+
+    <div class="flexbox">
+        <div class="bleh">
+            <a href="emails.html">
+                <img src="https://images.genius.com/9b1ba1ce4bff45845190f4521cf5d4f8.1000x1000x1.jpg"
+                    alt="Emails I Can't Send" style="width:100%; height: 450px">
+                <div class="meh">
+                    <p><b>Emails I Can't Send</b> <br> Year of Release: 2022 <br> Number of songs: 13 </p>
+                </div>
+            </a>
+        </div>
+
+        <div class="bleh">
+            <a href="SA_I.html">
+                <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71YrMA84GVL._SY355_.jpg"
+                    alt="Singular Act I" style="width:100%; height:450px;">
+                <div class="meh">
+                    <p><b>Singular Act I </b> <br> Year of Release: 2018 <br> Number of songs: 8 </p>
+                </div>
+            </a>
+        </div>
+
+        <div class="bleh">
+            <a href="SA_II.html">
+                <img src="https://i.pinimg.com/564x/6d/0b/67/6d0b675e6006c9dee96d548f66b6f35b.jpg" alt="Singular Act II"
+                    style="width:100%; height:450px">
+                <div class="meh">
+                    <p><b> Singular Act II </b><br> Year of Release: 2019 <br> Number of songs: 9</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="bleh">
+            <a href="evol.html">
+                <img src="https://i.pinimg.com/564x/63/f3/bc/63f3bc4af74b7490fcd9117b5f87e266.jpg" alt="EVOLution"
+                    style="width:100%; height:450px">
+                <div class="meh">
+                    <p> <b> EVOLution </b> <br> Year of Release: 2016 <br> Number of songs: 10</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="bleh">
+            <a href="eyes_wide.html">
+                <img src="https://upload.wikimedia.org/wikipedia/en/7/74/Eyes_Wide_Open_by_Sabrina_Carpenter.jpg"
+                    alt="Eyes Wide Open" style="width:100%; height:450px">
+                <div class="meh">
+                    <p> <b> Eyes Wide Open</b> <br> Year of Release: 2005 <br> Number of songs: 13</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <br>
+        <p>Our site is designed to help you navigate the wonderful world of music. Find out more <u> <b> <a href="about.html">about us.</a> </u> </b> </p>
+        <p>2023- Musiverse</p>
+        <br>
+    </footer>
+
+</body>
+
+</html>

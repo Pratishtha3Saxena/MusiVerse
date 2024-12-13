@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Twenty One Pilot Albums</title>
+    <link href="index.css" rel="stylesheet">
+    <style>
+        body {
+          background: linear-gradient(#c4c7ce, #6b4748, #6b4748, #eeb7a4, #70615c, #4d7288);
+        }
+
+
+        .hero-image {
+            background: url("https://cms.kerrang.com/images/2021/06/twenty-one-pilots-June-2021-promo-credit-Ashley-Osborn.jpg");
+            background-repeat: no-repeat;
+            background-position: 50% 0%;
+            background-size: cover;
+            height: 600px;
+            width: 100%;
+            top: 0%;
+            position: relative;
+            z-index: 1
+        }
+
+
+        .hero-text {
+            text-align: center;
+            position: absolute;
+            top: 15%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
+
+        div.flexbox {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        div.bleh {
+            width: 450px;
+            background-color: white;
+            box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 30px 30px 0 rgba(0, 0, 0, 0.19);
+            margin-bottom: 40px;
+            margin-top: 30px;
+            margin-left: 10px;
+        }
+
+        div.bleh img {
+            transition: all 0.3s ease;
+        }
+
+        div.bleh:hover {
+            transform: scale(1.1);
+        }
+
+        div.meh {
+            text-align: center;
+            padding: 10px 20px;
+        }
+
+        .navbar a:hover {
+            background-color: grey;
+        }
+
+        h1{
+            text-shadow: 2px 2px 4px rgb(102, 102, 196);
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <img src="ICON.png" alt="logo">
+           <a href="index.html">Home</a>
+    <a href="artists.html">Artists</a>
+    <a href="search.html">Search</a>
+    <a href="spotlight.html">Spotlight</a>
+    <a href="playlist.html">Playlist</a>
+    <a href="about.html">About</a>
+        <p> Artists > Twenty One Pilots </p>
+    </nav>
+
+
+    <div class="hero-image" style="margin-top: 60px;">
+        <div class="hero-text">
+            <h1 style="font-size:80px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                <i><b>TWENTY ONE PILOTS</b></i>
+            </h1>
+        </div>
+    </div>
+    
+        <script>
+        const defaultColor = '#eeeeee';
+
+        const navLinks = document.querySelectorAll('.navbar a');
+
+        navLinks.forEach(link => {
+            link.addEventListener('mouseover', () => {
+                link.style.color = '#00324e';
+            });
+
+            link.addEventListener('mouseout', () => {
+                link.style.color = defaultColor;
+            });
+        });
+    </script>
+
+
+    <br>
+    <br>
+
+    <div class="flexbox">
+
+        <div class="bleh">
+            <a href="scaled.html">
+                <img src="https://upload.wikimedia.org/wikipedia/en/5/52/Twenty_One_Pilots_-_Scaled_and_Icy.png"
+                    alt="scaled.html" style=" width:100%; height:450px">
+                <div class="meh">
+                    <p><b> Scaled and Icy </b><br> Year of Release: 2021 <br> Number of songs: 11</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="bleh">
+            <a href="trench.html">
+                <img src="https://upload.wikimedia.org/wikipedia/en/f/f3/Trench_Twenty_One_Pilots.png" alt="Trench"
+                    style="width:100%; height:450px;">
+                <div class="meh">
+                    <p><b>Trench </b> <br> Year of Release: 2018 <br> Number of songs: 14 </p>
+                </div>
+            </a>
+        </div>
+
+        <div class="bleh">
+            <a href="blurry_face.html">
+                <img src="https://upload.wikimedia.org/wikipedia/en/7/7d/Blurryface_by_Twenty_One_Pilots.png"
+                    alt="Blurry Face" style="width:100%; height:450px">
+                <div class="meh">
+                    <p> <b> Blurry Face </b> <br> Year of Release: 2015 <br> Number of songs: 14</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="bleh">
+            <a href="migraine.html">
+                <img src="https://i.scdn.co/image/ab67616d0000b27307e0cbc83c935c16bae91695" alt="Migrane"
+                    style="width:100%; height:450px">
+                <div class="meh">
+                    <p> <b> Migrane </b> <br> Year of Release: 2013 <br> Number of songs: 5</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="bleh">
+            <a href="quiet_is_violet.html">
+                <img src="https://i.scdn.co/image/ab67616d0000b27321759d58707628f4705674cc" alt="Quiet is Violent"
+                    style="width:100%; height: 450px">
+                <div class="meh">
+                    <p><b>Quiet is Violent</b> <br> Year of Release: 2014 <br> Number of songs: 10 </p>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+    <footer>
+        <br>
+        <p>Our site is designed to help you navigate the wonderful world of music. Find out more <u> <b> <a href="about.html">about us.</a> </u> </b> </p>
+        <p>2023- Musiverse</p>
+        <br>
+    </footer>
+</body>
+
+</html>

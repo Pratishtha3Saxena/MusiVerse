@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Linkin Park Albums</title>
+    <link href="index.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(#eacaae, #7f4b3d, #7f4b3d, #4d4844, grey);
+        }
+
+        .hero-image {
+            background: url("https://i2-prod.mirror.co.uk/incoming/article10840756.ece/ALTERNATES/s1227b/Linkin-Park.jpg");
+            background-repeat: no-repeat;
+            background-position: 50% 0%;
+            background-size: cover;
+            height: 600px;
+            width: 100%;
+            top: 0%;
+            position: relative;
+            z-index: 1
+        }
+
+        .hero-text {
+            text-align: center;
+            position: absolute;
+            top: 15%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
+
+        div.flexbox {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        div.bleh {
+            width: 450px;
+            background-color: white;
+            box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 30px 30px 0 rgba(0, 0, 0, 0.19);
+            margin-bottom: 40px;
+            margin-top: 30px;
+            margin-left: 10px;
+        }
+
+        div.bleh img {
+            transition: all 0.3s ease;
+        }
+
+        div.bleh:hover {
+            transform: scale(1.1);
+        }
+
+        div.meh {
+            text-align: center;
+            padding: 10px 20px;
+        }
+
+        .navbar a:hover {
+/*             color: rgb(207, 191, 128); */
+            background-color: grey;
+        }
+
+
+        h1{
+            text-shadow: 2px 2px 4px brown;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <img src="ICON.png" alt="logo">
+           <a href="index.html">Home</a>
+    <a href="artists.html">Artists</a>
+    <a href="search.html">Search</a>
+    <a href="spotlight.html">Spotlight</a>
+    <a href="playlist.html">Playlist</a>
+    <a href="about.html">About</a>
+        <p> Artists > Linkin Park </p>
+    </nav>
+
+
+    <script>
+        const defaultColor = '#eeeeee';
+
+        const navLinks = document.querySelectorAll('.navbar a');
+
+        navLinks.forEach(link => {
+            link.addEventListener('mouseover', () => {
+                link.style.color = 'rgb(207, 191, 128)';
+            });
+
+            link.addEventListener('mouseout', () => {
+                link.style.color = defaultColor;
+            });
+        });
+    </script>
+    
+    
+    <div class="hero-image" style="margin-top: 60px;">
+        <div class="hero-text">
+            <h1 style="font-size:80px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                <i><b>LINKIN PARK</b></i>
+            </h1>
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+
+    <div class="flexbox">
+        <div class="bleh">
+            <a href="meteora.html">
+                <img src="https://i.pinimg.com/736x/4e/3a/e6/4e3ae6804f95160bca49b8896c2b8eb2--music-search-numb.jpg"
+                    alt="Meteora" style="width:100%; height: 450px">
+                <div class="meh">
+                    <p><b>Meteora</b> <br> Year of Release: 2003 <br> Number of songs: 9 </p>
+                </div>
+            </a>
+        </div>
+
+        <div class="bleh">
+            <a href="living_things.html">
+                <img src="https://upload.wikimedia.org/wikipedia/en/c/c9/Linkin_Park_-_Living_Things.jpg"
+                    alt="Living Things" style="width:100%; height:450px">
+                <div class="meh">
+                    <p> <b> Living Things</b> <br> Year of Release: 2012 <br> Number of songs: 12</p>
+                </div>
+            </a>
+        </div>
+
+
+        <div class="bleh">
+            <a href="one_more_light.html">
+                <img src="https://i.ytimg.com/vi/D2xxg7CW4JQ/maxresdefault.jpg" alt="One More Light"
+                    style="width:100%; height:450px;">
+                <div class="meh">
+                    <p><b>One More Light </b> <br> Year of Release: 2017 <br> Number of songs: 10 </p>
+                </div>
+            </a>
+        </div>
+
+
+        <div class="bleh">
+            <a href="the_hunting.html">
+                <img src="https://upload.wikimedia.org/wikipedia/en/f/fa/Linkin_Park%2C_The_Hunting_Party%2C_album_art_final.jpg"
+                    alt="The Hunting Party" style="width:100%; height:450px">
+                <div class="meh">
+                    <p> <b> The Hunting Party </b> <br> Year of Release: 2014 <br> Number of songs: 12</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="bleh">
+            <a href="minutes_to_midnight.html">
+                <img src="https://upload.wikimedia.org/wikipedia/en/7/7a/Minutes_to_Midnight_cover.jpg"
+                    alt="Minutes to Midnight" style="width:100%; height:450px">
+                <div class="meh">
+                    <p><b> Minutes to Midnight </b><br> Year of Release: 2007 <br> Number of songs: 12</p>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+    <footer>
+        <br>
+        <p>Our site is designed to help you navigate the wonderful world of music. Find out more <u> <b> <a href="about.html">about us.</a> </u> </b> </p>
+        <p>2023- Musiverse</p>
+        <br>
+    </footer>
+
+</body>
+
+</html>

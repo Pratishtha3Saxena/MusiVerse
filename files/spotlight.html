@@ -1,0 +1,253 @@
+<html>
+<head>
+    <link href="index.css" rel="stylesheet">
+    <style>
+
+        /* img {
+            border-radius: 50%;
+            width: 500px;
+            height: 500px;
+            object-fit: cover;
+            object-position: center center;
+        } */
+        .glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  animation: glow 0.8s ease-in-out infinite alternate;
+}
+div.transbox {
+  margin-left:300px;
+  background-color: #2b0c4d;
+ 
+  opacity: 1;
+  width: 1250px;
+  transition: all 1.2s ease;
+ 
+}
+div.transbox p {
+  opacity:0.8;
+  align-content: center;
+  font-weight:bold;
+  color: #ffffff;
+ 
+}
+.zoom-effect {
+  width: 550px;
+  height: 550px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center center;
+  animation: zoom 2s ease-in-out infinite alternate;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #f7f8f3, 0 0 40px #f6f6ef, 0 0 50px #e3e4dd, 0 0 60px #f1f2e6, 0 0 70px #efefe7;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #e1ed5e, 0 0 40px #e1ed5e, 0 0 50px #e1ed5e, 0 0 60px #e1ed5e, 0 0 70px #e1ed5e, 0 0 80px #e1ed5e;
+  }
+}
+    </style>    
+    <nav class="navbar">
+        <img src="ICON.png" width="60" height="60" style="position: absolute; top: 0; left: 5">
+     <a href="index.html">Home</a>
+    <a href="artists.html">Artists</a>
+    <a href="search.html">Search</a>
+    <a href="spotlight.html">Spotlight</a>
+    <a href="playlist.html">Playlist</a>
+    <a href="about.html">About</a>
+<script src="hover.js"> </script>
+        <p> Spotlight </p>
+      </nav>
+      <title></title>
+      <center CLASS="glow" style="font-size:75px; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: aliceblue;"><B></br>Spotlight</B></center>
+</head> 
+
+<body style="background-image:url('logobackground.jpg'); background-repeat: no-repeat; background-size: cover;background-position-x: center;background-attachment: fixed;">
+
+</br>
+
+</br>
+  <img src="https://i.scdn.co/image/ab6761610000e5eb989ed05e1f0570cc4726c2d3" class="zoom-effect" style=" border-radius: 50%; width: 550px; height: 550px;margin-left: 640px;
+  object-fit: cover;
+  object-position: center center">
+  <div style="color:#fff;font-size: 60px;text-align: center;"></br>
+    <div class="transbox"><b>COLDPLAY</b></div></div>
+<div style="color:#fff;font-size: 30px;text-align: center;"></br></br>
+    <div class="transbox">Coldplay are a British rock band formed in London in 1997. They consist of vocalist and pianist Chris Martin, guitarist Jonny Buckland, bassist Guy Berryman, drummer Will Champion and creative director Phil Harvey. 
+    </br></br>Over 100 million records have been sold worldwide. They have recieved 7 Grammy Awards, including Song of the Year and Record of the Year for "Clocks" and Album of the Year for "Viva la Vida or Death and All His Friends".</div></div>
+     
+
+   <style>
+    #countdown {
+      color: white;
+      text-align: center;
+      font-size: 50px;
+    }
+  </style>
+  <p style="color: white;text-align: center;font-size: 30px;"><b>The Next SUPERHIT will hit your ears in</b></p>
+  <div id="countdown"></div>
+  <script>
+  // Set the countdown date
+var countdownDate = new Date("June 30, 2023 00:00:00").getTime();
+
+// Update the countdown every second
+var x = setInterval(function() {
+
+  // Get the current date and time
+  var now = new Date().getTime();
+  
+  // Calculate the time remaining
+  var timeRemaining = countdownDate - now;
+  
+  // Calculate days, hours, minutes, and seconds remaining
+  var days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+  
+  // Display the countdown timer
+  
+  document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+  
+  // If the countdown is over, display a message
+  if (timeRemaining < 0) {
+    clearInterval(x);
+    document.getElementById("countdown").innerHTML = "OUT NOW!!";
+  }
+}, 1000);
+</script>
+
+
+
+<h1 style="color: white;font-size: 50px;"><div class="transbox" style="margin-left: 20px; width: 1750px; " >Artist Rating System</div></h1>
+<form><p style="color: white;">
+    <div style="margin-left: 20px; color: white;">
+  <label for="name" style="font-size: 25;">Your Name :</label>
+  <input type="text" id="name" name="name"><br><br></br>
+  
+  <label for="rating" style="font-size:30 ;"><div class="transbox" style="margin-left:20px ;width: 240px;">Rate the Artist:</div></label><br>
+</br>
+  <input type="radio" id="star1" name="rating" value="1">
+  <label for="star5" style="font-size: 22;"> 1 star</label>
+  <input type="radio" id="star2" name="rating" value="2">
+  <label for="star4" style="font-size: 22;"> 2 stars</label>
+  <input type="radio" id="star3" name="rating" value="3">
+  <label for="star3" style="font-size: 22;"> 3 stars</label>
+  <input type="radio" id="star4" name="rating" value="4">
+  <label for="star2" style="font-size: 22">4 stars</label>
+  <input type="radio" id="star5" name="rating" value="5">
+  <label for="star1" style="font-size: 22;">5 stars</label><br><br>
+  
+  <label for="review" style="font-size: 25;"><div class="transbox" style="margin-left:20px ;width: 170px;">Your Review:</div></label><br>
+  <textarea id="review" name="review" rows="3" cols="70"></textarea><br><br>
+
+  <button type="button" onclick="submitReview()">Submit Review</button>
+</div>
+</p>
+</form>
+
+<br><br>
+
+
+
+<style>
+    table {
+      margin-left: 500px; /*to center the table */
+      table-layout: fixed;
+      /*width: 1100px;
+      margin-left: auto;
+      margin-right: auto;
+      /*border-spacing: 200px; /* to add space between columns */
+      
+    }
+    th, td {
+      padding: 5px; /* to add space within cells */
+      padding-right: 250px;
+      /* align-content: center; */
+      text-align: center;
+      font-size: 25px;
+      table-layout: fixed;
+      overflow-wrap: break-word; 
+      
+    }
+    
+    </style>
+    
+    <table id="reviews" style="color: white;">
+        
+      <thead>
+        <tr>
+            <h2 style="color: white;text-align: center;font-size: 45px;"><div class="transbox" style=" width: 350px;margin-left: 740px;">User Reviews</div></h2>
+            <th style="font-size: 30px;"><u>Name</u></th>
+            <th style="font-size: 30px;"><u>Rating</u></th>
+            <th style="font-size: 30px; "><u>Review</u></th>
+          </tr>
+      </thead>
+      <tbody>
+        
+      </tbody>
+    </table>
+    
+
+
+
+<style>
+    .white-text {
+      color: white;
+    }
+  </style>
+<script class="white-text">
+  function submitReview() {
+    // Get the user input values
+    const name = document.getElementById("name").value;
+    const rating = document.querySelector('input[name="rating"]:checked').value;
+    const review = document.getElementById("review").value;
+    
+    // Create a new row in the reviews table
+    const table = document.getElementById("reviews");
+    const row = table.insertRow(-1);
+    const nameCell = row.insertCell(0);
+    const ratingCell = row.insertCell(1);
+    const reviewCell = row.insertCell(2);
+    
+    // Set the cell values to the user input values
+    nameCell.innerHTML = name;
+    ratingCell.innerHTML = rating;
+    reviewCell.innerHTML = review;
+    
+    // Clear the form inputs
+    document.getElementById("name").value = "";
+    document.querySelector('input[name="rating"]:checked').checked = false;
+    document.getElementById("review").value = "";
+  }
+</script>
+
+
+<footer>
+  <br>
+  <p>Our site is designed to help you navigate the wonderful world of music. Find out more <u> <b> <a
+                  href="about.html">about us.</a> </u> </b> </p>
+  <p>2023- Musiverse</p>
+  <br>
+</footer>
+<script src="hover.js"> </script>
+</body>
+
+</html>

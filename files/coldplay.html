@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Coldplay Albums</title>
+    <link href="index.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url("https://t4.ftcdn.net/jpg/01/97/94/41/360_F_197944144_hkdj580hGg9wcY5CJTKHALP97fMX32Jb.jpg");
+        }
+
+        .hero-image {
+            background: url("https://ichef.bbci.co.uk/images/ic/1200x675/p0d7m32k.jpg") top no-repeat;
+            background-size: cover;
+            height: 600px;
+            width: 100%;
+            top: 0%;
+            position: relative;
+            z-index: 1
+        }
+
+        .hero-text {
+            text-align: center;
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
+
+        div.flexbox {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        div.bleh {
+            width: 450px;
+            background-color: white;
+            box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 30px 30px 0 rgba(0, 0, 0, 0.19);
+            margin-bottom: 40px;
+            margin-top: 30px;
+            margin-left: 10px;
+        }
+
+        div.bleh img {
+            transition: all 0.3s ease;
+        }
+
+        div.bleh:hover {
+            transform: scale(1.1);
+        }
+
+        div.meh {
+            text-align: center;
+            padding: 10px 20px;
+        }
+
+        .navbar a:hover {
+/*             color: rgb(48, 50, 110); */
+            background-color: grey;
+        }
+
+        h1{
+            text-shadow: 2px 2px 4px silver;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <img src="ICON.png" alt="logo">
+           <a href="index.html">Home</a>
+    <a href="artists.html">Artists</a>
+    <a href="search.html">Search</a>
+    <a href="spotlight.html">Spotlight</a>
+    <a href="playlist.html">Playlist</a>
+    <a href="about.html">About</a>
+        <p> Artists > Coldplay </p>
+    </nav>
+
+        <script>
+        const defaultColor = '#eeeeee';
+
+        const navLinks = document.querySelectorAll('.navbar a');
+
+        navLinks.forEach(link => {
+            link.addEventListener('mouseover', () => {
+                link.style.color = 'rgb(48, 50, 110)';
+            });
+
+            link.addEventListener('mouseout', () => {
+                link.style.color = defaultColor;
+            });
+        });
+    </script>
+
+
+    <div class="hero-image" style="margin-top: 60px;">
+        <div class="hero-text">
+            <h1 style="font-size:80px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                <i><b>COLDPLAY</b></i>
+            </h1>
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+
+    <div class="flexbox">
+        <div class="bleh">
+            <a href="ghost.html">
+                <img src="https://i.pinimg.com/564x/a1/f3/2c/a1f32cc9f791174884eab87aa299c503.jpg" alt="Ghost Stories"
+                    style="width:100%; height: 450px">
+                <div class="meh">
+                    <p><b>Ghost Stories</b> <br> Year of Release: 2014 <br> Number of songs: 8 </p>
+                </div>
+            </a>
+        </div>
+
+        <div class="bleh">
+            <a href="music_of_the_spheres.html">
+                <img src="https://i.pinimg.com/564x/f9/1a/d1/f91ad164b5f63c96e3727d8c69e46845.jpg"
+                    alt="Music of the Spheres" style="width:100%; height:450px;">
+                <div class="meh">
+                    <p><b>Music of the Spheres </b> <br> Year of Release: 2021 <br> Number of songs: 7 </p>
+                </div>
+            </a>
+        </div>
+
+        <div class="bleh">
+            <a href="head_full_of_dreams.html">
+                <img src="https://i.pinimg.com/564x/c9/d2/65/c9d265412e9924c3be3624961760c734.jpg"
+                    alt="A Head Full of Dreams" style="width:100%; height:450px">
+                <div class="meh">
+                    <p><b> A Head Full of Dreams </b><br> Year of Release: 2015 <br> Number of songs: 11</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="bleh">
+            <a href="parachute.html">
+                <img src="https://i.pinimg.com/564x/69/97/6f/69976f8830dc25c794aa6f39cc616b64.jpg" alt="Parachutes"
+                    style="width:100%; height:450px">
+                <div class="meh">
+                    <p> <b> Parachutes </b> <br> Year of Release: 2000 <br> Number of songs: 10</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="bleh">
+            <a href="X&Y.html">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/28/Coldplay_X%26Y.svg/1200px-Coldplay_X%26Y.svg.png"
+                    alt="X&Y 2005" style="width:100%; height:450px">
+                <div class="meh">
+                    <p> <b>X&Y </b> <br> Year of Release: 2005 <br> Number of songs: 9 </p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <br>
+        <p>Our site is designed to help you navigate the wonderful world of music. Find out more <u> <b> <a href="about.html">about us.</a> </u> </b> </p>
+        <p>2023- Musiverse</p>
+        <br>
+    </footer>
+</body>
+
+</html>

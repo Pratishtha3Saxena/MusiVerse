@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Paramore Albums</title>
+    <link href="index.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(#8b8c7d, #4b5452, #444c44, #b6afa6, #dda23a, #cbaacc, #cd5121);
+        }
+
+        .hero-image {
+            background: url("paramorealbum.jpg");
+            background-repeat: no-repeat;
+            background-position: 50% 10%;
+            background-size: cover;
+            height: 600px;
+            width: 100%;
+            top: 0%;
+            position: relative;
+            z-index: 1
+        }
+        .hero-text {
+            text-align: center;
+            position: absolute;
+            top: 15%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
+
+        div.flexbox {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        div.bleh {
+            width: 450px;
+            background-color: white;
+            box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 30px 30px 0 rgba(0, 0, 0, 0.19);
+            margin-bottom: 40px;
+            margin-top: 30px;
+            margin-left: 10px;
+        }
+
+        div.bleh img {
+            transition: all 0.3s ease;
+        }
+
+        div.bleh:hover {
+            transform: scale(1.1);
+        }
+
+        div.meh {
+            text-align: center;
+            padding: 10px 20px;
+        }
+
+        .navbar a:hover {
+/*             color: rgb(207, 191, 128); */
+            background-color: grey;
+        }
+
+        h1{
+            text-shadow: 2px 2px 4px orangered;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <img src="ICON.png" alt="logo">
+        <a href="index.html">Home</a>
+        <a href="artists.html">Artists</a>
+        <a href="about.html">About</a>
+        <a href="search.html">Search</a>
+        <a href="spotlight.html">Spotlight</a>
+        <p> Artists > Paramore </p>
+    </nav>   
+    
+    <script>
+        const defaultColor = '#eeeeee';
+
+        const navLinks = document.querySelectorAll('.navbar a');
+
+        navLinks.forEach(link => {
+            link.addEventListener('mouseover', () => {
+                link.style.color = 'rgb(207, 191, 128)';
+            });
+
+            link.addEventListener('mouseout', () => {
+                link.style.color = defaultColor;
+            });
+        });
+    </script>
+    
+        <script>
+        const defaultColor = '#eeeeee';
+
+        const navLinks = document.querySelectorAll('.navbar a');
+
+        navLinks.forEach(link => {
+            link.addEventListener('mouseover', () => {
+                link.style.color = 'rgb(207, 191, 128)';
+            });
+
+            link.addEventListener('mouseout', () => {
+                link.style.color = defaultColor;
+            });
+        });
+    </script>
+
+
+    <div class="hero-image" style="margin-top: 60px;">
+        <div class="hero-text">
+            <h1 style="font-size:80px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                <i><b>PARAMORE</b></i>
+            </h1>
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+
+    <div class="flexbox">
+
+        <div class="bleh">
+            <a href="brand_new.html">
+                <img src="https://upload.wikimedia.org/wikipedia/en/9/9b/Paramore_-_Brand_New_Eyes.png"
+                    alt="Brand New Eyes" style="width:100%; height:450px">
+                <div class="meh">
+                    <p><b> Brand New Eyes </b><br> Year of Release: 2009 <br> Number of songs: 12</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="bleh">
+            <a href="this_is_why.html">
+                <img src="https://i.scdn.co/image/ab6761610000e5ebb10c34546a4ca2d7faeb8865" alt="This is Why"
+                    style="width:100%; height:450px;">
+                <div class="meh">
+                    <p><b>This is Why </b> <br> Year of Release: 2003 <br> Number of songs: 10 </p>
+                </div>
+            </a>
+        </div>
+
+        <div class="bleh">
+            <a href="paramore1.html">
+                <img src="https://upload.wikimedia.org/wikipedia/en/e/eb/ParamoreParamore.png" alt="Paramore"
+                    style="width:100%; height:450px">
+                <div class="meh">
+                    <p> <b> Paramore </b> <br> Year of Release: 2013 <br> Number of songs: 17</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="bleh">
+            <a href="After_Laughter.html">
+                <img src="https://upload.wikimedia.org/wikipedia/en/9/9b/After_Laughter_Paramore_album_cover.png
+                " alt="After Laughter" style="width:100%; height:450px">
+                <div class="meh">
+                    <p> <b> After Laughter </b> <br> Year of Release: 2017 <br> Number of songs: 12</p>
+                </div>
+            </a>
+        </div>
+
+
+        <div class="bleh">
+            <a href="riot.html">
+                <img src="https://i.scdn.co/image/ab67616d0000b273bee754528c08d5ff6799a1eb" alt="Riot"
+                    style="width:100%; height: 450px">
+                <div class="meh">
+                    <p><b>Riot</b> <br> Year of Release: 2007 <br> Number of songs: 11 </p>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+    <footer>
+        <br>
+        <p>Our site is designed to help you navigate the wonderful world of music. Find out more <u> <b> <a href="about.html">about us.</a> </u> </b> </p>
+        <p>2023- Musiverse</p>
+        <br>
+    </footer>
+
+</body>
+
+</html>
